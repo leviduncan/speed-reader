@@ -24,6 +24,7 @@ body {
   border-radius: 8px;
   border: solid 1px #fff;
   box-shadow: 0 0 10px #225bc433;
+  width: 100%;
 }
 
 .spd-grp {
@@ -37,4 +38,15 @@ body {
   justify-content: center;
   gap: 10px;
   margin: 10px 0;
+}
+
+.btn-grp .btn {
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .btn-grp {
+    flex-direction: column;
+  }
+
 }
