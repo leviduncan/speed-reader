@@ -49,6 +49,7 @@ const Input = () => {
 
     const handleSectionToggle = () => {
         setVisibility((prevVisibility) => !prevVisibility);
+        handleButtonClick()
     };
 
     useEffect(() => {
@@ -70,7 +71,7 @@ const Input = () => {
     }, [currentIndex, words, isPaused, speed]);
 
     return (
-        <div>
+        <div className="speedRead">
             <h2>Enter Text Below</h2>
             <div className={visibility ? '' : 'hide'}>
                 <textarea
